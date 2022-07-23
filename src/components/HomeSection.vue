@@ -3,8 +3,7 @@
     background: `url(${section.image})`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
-    backgroundRepeat: 'no-repeat',
-    backgroundAttachment:'fixed'
+    backgroundRepeat: 'no-repeat'
   }">
     <div
       class="content absolute left-0 top-[15vh] flex h-3/4 w-screen flex-col justify-between items-center text-center">
@@ -32,10 +31,22 @@
 <script setup>
 const props = defineProps({
   section: {
-    image: String,
-    title: String,
-    text: String,
-    buttons: Array,
+    image: {
+      type: String,
+      required: true,
+    },
+    title: {
+      type: String,
+      required: true,
+    },
+    text: {
+      type: String,
+      required: true,
+    },
+    buttons: {
+      type: Array,
+      required: true,
+    },
   },
 });
 </script>
