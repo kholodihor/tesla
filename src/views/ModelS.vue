@@ -29,6 +29,6 @@ const store = useModelSStore();
     <ImageSection :store="store.imageSection" />
     <InterSection :store="store.future" :marker="'future'" />
     <VideoTabs :store="store.autopilot" />
-        <Specs :store="store.specs" />
+    <Specs :store="store.specs" />
   </div>
 </template>

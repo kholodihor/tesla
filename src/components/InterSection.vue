@@ -20,7 +20,7 @@
           class="flex justify-around items-center w-[80vw] mb-[3vh]"
           :class="[marker == 'future' ? 'text-black' : 'text-white']"
         >
-          <ul class="flex text-center justify-around w-full px-[0.5rem]">
+          <ul class="sm:flex text-center justify-around w-full px-[0.5rem]">
             <li
               v-for="(item, index) in store.characteristics"
               :key="index"

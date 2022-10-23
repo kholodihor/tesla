@@ -14,7 +14,7 @@
           v-for="(item, index) in store"
           :key="index"
           @click="changeActiveTab(index)"
-          class="button-secondary"
+          class="button-secondary mx-auto block"
           :class="[item == activeTab ? ' border-white' : 'border-gray-500']"
         >
           {{ item.tab }}
