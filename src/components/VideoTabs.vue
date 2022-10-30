@@ -1,6 +1,6 @@
 <template>
   <section class="flex justify-center items-center flex-col bg-white p-[2rem]">
-    <div class="p-[2rem] md:h-[20vh] w-full sm:w-[80vw]">
+    <div class="p-[2rem] md:h-[20vh] w-full sm:w-[80vw] mb-[10vh]">
       <h1 class="text-3xl font-bold mb-[2rem]">{{ activeTab.mainTitle }}</h1>
       <p class="w-full sm:w-[70%]">{{ activeTab.mainText }}</p>
     </div>
