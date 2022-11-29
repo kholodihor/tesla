@@ -1,10 +1,10 @@
 <script setup>
-import { useModelYStore } from '../store/model_y';
-import { useModelSStore } from '../store/model_s';
+import { useModelYStore } from '@/store/model_y';
+import { useModelSStore } from '@/store/model_s';
 import Intro from '@/components/Intro.vue';
 import Video from '@/components/Video.vue';
-import InterSection from '../components/InterSection.vue';
-import Specs from '../components/Specs.vue';
+import InterSection from '@/components/InterSection.vue';
+import Specs from '@/components/Specs.vue';
 import VideoSection from '@/components/VideoSection.vue';
 
 const store = useModelYStore();

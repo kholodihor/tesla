@@ -1,16 +1,15 @@
 <script setup>
-import { ref } from 'vue';
-import { useModelXStore } from '../store/model_x';
-import { useModelSStore } from '../store/model_s';
+import { useModelXStore } from '@/store/model_x';
+import { useModelSStore } from '@/store/model_s';
 import Intro from '@/components/Intro.vue';
 import Interior from '@/components/Interior.vue';
 import Video from '@/components/Video.vue';
 import Grid from '@/components/Grid.vue';
-import InterSection from '../components/InterSection.vue';
-import ImageTabs from '../components/ImageTabs.vue'
+import InterSection from '@/components/InterSection.vue';
+import ImageTabs from '@/components/ImageTabs.vue'
 import ImageSection from '@/components/ImageSection.vue';
-import VideoTabs from '../components/VideoTabs.vue'
-import Specs from '../components/Specs.vue';
+import VideoTabs from '@/components/VideoTabs.vue'
+import Specs from '@/components/Specs.vue';
 
 const store = useModelXStore();
 const storeS = useModelSStore();

@@ -1,6 +1,6 @@
 import { defineStore } from 'pinia';
 
-export const usesidebarLinksStore = defineStore({
+export const useSidebarLinksStore = defineStore({
   id: 'sidebarLinks',
   state() {
     return {

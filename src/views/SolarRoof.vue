@@ -1,12 +1,11 @@
 <script setup>
-import { useSolarRoofStore } from '../store/solarroof';
+import { useSolarRoofStore } from '@/store/solarroof';
 import Intro from '@/components/Intro.vue';
 import ImageSection from '@/components/ImageSection.vue';
-import InterSection from '../components/InterSection.vue';
-import VideoTabs from '../components/VideoTabs.vue'
-import Specs from '../components/Specs.vue';
+import InterSection from '@/components/InterSection.vue';
+import VideoTabs from '@/components/VideoTabs.vue'
+import Specs from '@/components/Specs.vue';
 import VideoSection from '@/components/VideoSection.vue';
-
 
 const store = useSolarRoofStore();
 </script>
@@ -21,6 +20,6 @@ const store = useSolarRoofStore();
         <ImageSection :store="store.efficiency" />
         <InterSection :store="store.monitoring" />
         <ImageSection :store="store.payless" />
-           <Specs :store="store.specs" />
+        <Specs :store="store.specs" />
     </div>
 </template>

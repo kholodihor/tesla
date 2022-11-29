@@ -22,6 +22,7 @@
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"
           data-aos-once="true"
+          data-testId="test_title"
         >
           {{ item.title }}
         </h3>

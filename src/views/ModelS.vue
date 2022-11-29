@@ -1,13 +1,13 @@
 <script setup>
-import { useModelSStore } from '../store/model_s';
+import { useModelSStore } from '@/store/model_s';
 import Intro from '@/components/Intro.vue';
 import Interior from '@/components/Interior.vue';
 import Grid from '@/components/Grid.vue';
-import InterSection from '../components/InterSection.vue';
-import ImageTabs from '../components/ImageTabs.vue'
-import VideoTabs from '../components/VideoTabs.vue'
+import InterSection from '@/components/InterSection.vue';
+import ImageTabs from '@/components/ImageTabs.vue'
+import VideoTabs from '@/components/VideoTabs.vue'
 import ImageSection from '@/components/ImageSection.vue';
-import Specs from '../components/Specs.vue';
+import Specs from '@/components/Specs.vue';
 import Video from '@/components/Video.vue';
 import VideoSection from '@/components/VideoSection.vue';
 

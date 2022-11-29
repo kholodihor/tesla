@@ -1,11 +1,10 @@
 <script setup>
-import { useModel3Store } from '../store/model_3';
-import { useModelSStore } from '../store/model_s';
+import { useModel3Store } from '@solarroof/store/model_3';
+import { useModelSStore } from '@solarroof/store/model_s';
 import Intro from '@/components/Intro.vue';
 import ImageSection from '@/components/ImageSection.vue';
-import InterSection from '../components/InterSection.vue';
-import VideoTabs from '../components/VideoTabs.vue'
-import Specs from '../components/Specs.vue';
+import InterSection from '@solarroof/components/InterSection.vue';
+import Specs from '@solarroof/components/Specs.vue';
 
 const store = useModel3Store();
 const storeS = useModelSStore();

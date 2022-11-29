@@ -2,9 +2,9 @@
   <section
     class="intro flex w-screen min-h-screen justify-between items-center flex-col py-[5vh]"
     :class="[
-      routerNow == '/model-3' ||
-      routerNow == '/model-x' ||
-      routerNow == '/solar-panels'
+      routeNow === '/model-3' ||
+      routeNow === '/model-x' ||
+      routeNow === '/solar-panels'
         ? 'text-black'
         : 'text-white',
     ]"
@@ -74,7 +74,7 @@ const props = defineProps({
   },
 });
 
-const routerNow = computed(() => {
+const routeNow = computed(() => {
   return router.currentRoute.value.path;
 });
 </script>

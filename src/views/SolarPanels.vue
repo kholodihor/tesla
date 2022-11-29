@@ -1,12 +1,10 @@
 <script setup>
-import { useSolarPanelsStore } from '../store/solarpanels';
+import { useSolarPanelsStore } from '@/store/solarpanels';
 import Intro from '@/components/Intro.vue';
 import ImageSection from '@/components/ImageSection.vue';
-import InterSection from '../components/InterSection.vue';
-import VideoTabs from '../components/VideoTabs.vue'
-import Specs from '../components/Specs.vue';
+import InterSection from '@/components/InterSection.vue';
+import Specs from '@/components/Specs.vue';
 import VideoSection from '@/components/VideoSection.vue';
-
 
 const store = useSolarPanelsStore();
 </script>

@@ -93,7 +93,4 @@ const props = defineProps({
     },
   },
 });
-console.log(props.marker);
 </script>
-
-<style></style>
