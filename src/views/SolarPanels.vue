@@ -1,5 +1,16 @@
+<template>
+    <Intro :store="store.intro" />
+    <VideoSection :store="store.videoSection" />
+    <ImageSection :store="store.imageSection" />
+    <InterSection :store="store.backup" />
+    <InterSection :store="store.order" />
+    <ImageSection :store="store.efficiency" />
+    <InterSection :store="store.monitoring" />
+    <Specs :store="store.specs" />
+</template>
+
 <script setup>
-import { useSolarPanelsStore } from '@/store/solarpanels';
+import { useSolarPanelsStore } from '@/stores/solarpanels';
 import Intro from '@/components/Intro.vue';
 import ImageSection from '@/components/ImageSection.vue';
 import InterSection from '@/components/InterSection.vue';
@@ -8,16 +19,3 @@ import VideoSection from '@/components/VideoSection.vue';
 
 const store = useSolarPanelsStore();
 </script>
-
-<template>
-    <div class="min-h-screen w-screen">
-        <Intro :store="store.intro" />
-        <VideoSection :store="store.videoSection" />
-        <ImageSection :store="store.imageSection" />
-        <InterSection :store="store.backup" />
-        <InterSection :store="store.order" />
-        <ImageSection :store="store.efficiency" />
-        <InterSection :store="store.monitoring" />
-        <Specs :store="store.specs" />
-    </div>
-</template>

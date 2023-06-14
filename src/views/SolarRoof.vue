@@ -1,5 +1,17 @@
+<template>
+    <Intro :store="store.intro" />
+    <InterSection :store="store.beautiful" />
+    <ImageSection :store="store.backup" />
+    <VideoSection :store="store.durability" />
+    <VideoTabs :store="store.installation" />
+    <ImageSection :store="store.efficiency" />
+    <InterSection :store="store.monitoring" />
+    <ImageSection :store="store.payless" />
+    <Specs :store="store.specs" />
+</template>
+
 <script setup>
-import { useSolarRoofStore } from '@/store/solarroof';
+import { useSolarRoofStore } from '@/stores/solarroof';
 import Intro from '@/components/Intro.vue';
 import ImageSection from '@/components/ImageSection.vue';
 import InterSection from '@/components/InterSection.vue';
@@ -10,16 +22,3 @@ import VideoSection from '@/components/VideoSection.vue';
 const store = useSolarRoofStore();
 </script>
 
-<template>
-    <div class="min-h-screen w-screen">
-        <Intro :store="store.intro" />
-        <InterSection :store="store.beautiful" />
-        <ImageSection :store="store.backup" />
-        <VideoSection :store="store.durability" />
-        <VideoTabs :store="store.installation" />
-        <ImageSection :store="store.efficiency" />
-        <InterSection :store="store.monitoring" />
-        <ImageSection :store="store.payless" />
-        <Specs :store="store.specs" />
-    </div>
-</template>

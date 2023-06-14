@@ -9,7 +9,10 @@
         : 'text-white',
     ]">
     <div class="logo h-[1rem]">
-      <router-link to="/"><img class="h-[1rem] w-[8rem] " src="/logo.svg" alt="" /></router-link>
+      <router-link to="/"><img class="h-[1rem] w-[8rem] " src="/logo.svg" alt="" :class="[
+        routerNow === '/solar-roof'
+        && 'invert'
+      ]" /></router-link>
     </div>
     <Nav />
     <div class="flex gap-8 text-sm font-bold">
@@ -20,7 +23,7 @@
       <button @click="isSidebar = !isSidebar">Menu</button>
     </div>
     <Transition name="sidebar">
-    <Sidebar v-if="isSidebar" @close="closeSidebar" class="hidden xl:block" />
+      <Sidebar v-if="isSidebar" @close="closeSidebar" class="hidden xl:block" />
     </Transition>
     <Transition name="sidebar">
       <Mobilebar v-if="isSidebar" @close="closeSidebar" class="block xl:hidden" />
@@ -58,4 +61,5 @@ const routerNow = computed(() => {
 .sidebar-leave-to {
   opacity: 0;
   transform: translateX(200%);
-}</style>
+}
+</style>

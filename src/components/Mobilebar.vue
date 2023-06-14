@@ -18,7 +18,7 @@
 
 <script setup>
 import CloseIcon from './CloseIcon.vue';
-import { useSidebarLinksStore } from '@/store/sidebarlinks';
+import { useSidebarLinksStore } from '@/stores/sidebarlinks';
 
 const links = useSidebarLinksStore().mobilebarLinks;
 

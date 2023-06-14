@@ -8,7 +8,7 @@
       <div class="w-full sm:w-1/3">
         <img
           :src="`${item.image}`"
-          alt="image"
+          :alt="`${item.title}`"
           data-aos="fade-up"
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"
@@ -22,7 +22,6 @@
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"
           data-aos-once="true"
-          data-testId="test_title"
         >
           {{ item.title }}
         </h3>
