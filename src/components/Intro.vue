@@ -52,7 +52,7 @@
 <script setup>
 import { computed } from 'vue';
 import { useRouter } from 'vue-router';
-const router = useRouter();
+const route = useRoute();
 const props = defineProps({
   store: {
     image: {
@@ -75,6 +75,6 @@ const props = defineProps({
 });
 
 const routeNow = computed(() => {
-  return router.currentRoute.value.path;
+  return route.path;
 });
 </script>

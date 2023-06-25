@@ -1,10 +1,10 @@
 <template>
   <div class="absolute z-[9999] py-5 flex h-[8vh] w-full items-center justify-center md:justify-around gap-10 md:gap-20"
     :class="[
-      routerNow === '/' ||
-        routerNow === '/model-3' ||
-        routerNow === '/model-x' ||
-        routerNow === '/solar-panels'
+      routeNow === '/' ||
+        routeNow === '/model-3' ||
+        routeNow === '/model-x' ||
+        routeNow === '/solar-panels'
         ? 'text-black'
         : 'text-white',
     ]">
@@ -34,20 +34,20 @@
 
 <script setup>
 import { ref, computed } from 'vue';
-import { useRouter } from 'vue-router';
+import { useRoute } from 'vue-router';
 import Nav from './Nav.vue';
 import Sidebar from './Sidebar.vue';
 import Mobilebar from './Mobilebar.vue';
 
 const isSidebar = ref(false);
-const router = useRouter();
+const route = useRoute();
 
 const closeSidebar = () => {
   isSidebar.value = false;
 };
 
-const routerNow = computed(() => {
-  return router.currentRoute.value.path;
+const routeNow = computed(() => {
+  return router.path;
 });
 </script>
 
