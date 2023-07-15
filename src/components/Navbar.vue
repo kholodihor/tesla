@@ -47,7 +47,7 @@ const closeSidebar = () => {
 };
 
 const routeNow = computed(() => {
-  return router.path;
+  return route.path;
 });
 </script>
 

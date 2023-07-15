@@ -52,7 +52,7 @@
         </button>
       </div>
       <div
-        class="w-full sm:w-2/3"
+        class="w-full sm:w-2/3 flex justify-center items-center"
         data-aos="fade-up"
         data-aos-duration="1000"
         data-aos-easing="ease-in-out"

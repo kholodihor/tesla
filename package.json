@@ -12,9 +12,9 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "@vueuse/head": "^1.1.26",
     "aos": "^2.3.4",
     "pinia": "^2.0.16",
-    "swiper": "^8.3.1",
     "vue": "^3.2.37",
     "vue-loader": "^17.0.0",
     "vue-router": "^4.1.2"

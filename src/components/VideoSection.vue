@@ -1,10 +1,10 @@
 <template>
   <section
-    class="bg-white md:flex border-t-1 border-l-0 border-r-0 border-b-0 border-2 border-white "
+    class="bg-white md:flex border-t-1 border-l-0 border-r-0 border-b-0 border-2 border-white p-2 "
   >
     <div class="video w-full md:w-2/3 h-full">
       <video
-        class="w-full h-full"
+        class="w-full h-full "
         :src="`${store.video}`"
         muted
         autoplay
@@ -13,7 +13,7 @@
       />
     </div>
     <div
-      class="info w-full md:w-1/3 flex justify-between items-start flex-col p-[2rem]"
+      class="info w-full md:w-1/3 flex justify-evenly items-start flex-col p-[2rem] "
     >
       <div>
         <span class="subtitle">{{ store.subtitle }}</span>

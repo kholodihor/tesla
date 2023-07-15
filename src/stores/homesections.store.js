@@ -42,7 +42,7 @@ export const useHomeSectionsStore = defineStore({
           buttons: ['order now', 'learn more'],
         },
         {
-          image: 'home/accessories.webp',
+          image: 'home/charger.webp',
           title: 'Accessories',
           text: '',
           buttons: ['shop now'],

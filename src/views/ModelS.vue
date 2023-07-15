@@ -16,6 +16,8 @@
 </template>
 
 <script setup>
+import { computed,reactive } from 'vue';
+import { useHead } from '@vueuse/head';
 import { useModelSStore } from '@/stores/model_s';
 import Intro from '@/components/Intro.vue';
 import Interior from '@/components/Interior.vue';
@@ -27,6 +29,14 @@ import ImageSection from '@/components/ImageSection.vue';
 import Specs from '@/components/Specs.vue';
 import Video from '@/components/Video.vue';
 import VideoSection from '@/components/VideoSection.vue';
+
+const siteData =  reactive({
+  title:'Model S | Tesla'
+})
+
+useHead({
+  title:computed(()=>siteData.title)
+})
 
 const store = useModelSStore();
 </script>
