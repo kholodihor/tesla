@@ -6,7 +6,7 @@
         background: `url(${store.image})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
+        backgroundRepeat: 'no-repeat'
       }"
     >
       <div
@@ -17,15 +17,11 @@
         data-aos-once="true"
       >
         <div
-          class="flex justify-around items-center w-[80vw] mb-[3vh]"
+          class="flex justify-center items-center w-[80vw] mb-[3vh]"
           :class="[marker == 'future' ? 'text-black' : 'text-white']"
         >
-          <ul class="sm:flex text-center justify-around w-full px-[0.5rem]">
-            <li
-              v-for="(item, index) in store.characteristics"
-              :key="index"
-              class="min-w-[40%] m-[0.5rem]"
-            >
+          <ul class="sm:flex text-center justify-around w-full px-[0.5rem] w-full">
+            <li v-for="(item, index) in store.characteristics" :key="index" class="m-[0.5rem]">
               <h4 class="text-[1.3rem] sm:text-[1.7rem] font-semibold">
                 {{ item.number }}
               </h4>
@@ -45,11 +41,7 @@
       >
         <span class="subtitle">{{ store.subtitle }}</span>
         <h1 class="title">{{ store.title }}</h1>
-        <button
-          class="button-secondary border-black"
-        >
-          order now
-        </button>
+        <button class="button-secondary border-black">order now</button>
       </div>
       <div
         class="w-full sm:w-2/3 flex justify-center items-center"
@@ -68,29 +60,29 @@
 const props = defineProps({
   marker: {
     type: String,
-    required: false,
+    required: false
   },
   store: {
     image: {
       type: String,
-      required: true,
+      required: true
     },
     title: {
       type: String,
-      required: true,
+      required: true
     },
     subtitle: {
       type: String,
-      required: true,
+      required: true
     },
     text: {
       type: String,
-      required: true,
+      required: true
     },
     characteristics: {
       type: Object,
-      required: false,
-    },
-  },
-});
+      required: false
+    }
+  }
+})
 </script>
