@@ -23,7 +23,7 @@ export const useModel3Store = defineStore({
         ]
       },
       imageSection: {
-        image: '/model_3/scheme.webp',
+        image: 'model_3/scheme.webp',
         title: 'Built for Safety',
         subtitle: 'Safety',
         text: 'Safety is the most important part of every Tesla. We design our vehicles to exceed safety standards. 5-Star Rating Model 3 achieved NHTSA 5-star safety ratings in every category and subcategory. Top Safety Pick+ Model 3 received the IIHS Top Safety Pick+ award, with top ratings in all crashworthiness and front crash prevention categories. '

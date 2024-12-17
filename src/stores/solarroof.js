@@ -5,7 +5,7 @@ export const useSolarRoofStore = defineStore({
   state() {
     return {
       intro: {
-        image: 'https://i.redd.it/kgl4kiyi4qaa1.jpg',
+        image: 'solar_roof.jpg',
         title: 'Solar Roof',
         subtitle: 'Transform your roof and produce clean energy',
         characteristics: [
